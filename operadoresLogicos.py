@@ -4,6 +4,8 @@ negacion = not calor
 print(f'inicial: {calor}')
 print(f'negacion de la proposicion inicial: {negacion}')
 
+
+#and deben ser las dos verdaderas si no da false
 proposicion1 = True
 proposicion2 = False
 
@@ -12,3 +14,14 @@ conjuncion = proposicion1 and proposicion2
 print(f'proposicion1: {proposicion1}')
 print(f'proposicion2: {proposicion2}')
 print (f'{conjuncion}')
+
+
+
+proposicion1 = True
+proposicion2 = False
+
+disyuncion = proposicion1 or proposicion2
+
+print(f'proposicion1: {proposicion1}')
+print(f'proposicion2: {proposicion2}')
+print (f'{disyuncion}')
