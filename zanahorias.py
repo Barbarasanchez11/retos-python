@@ -12,7 +12,7 @@
 
 import numpy as np
 import statistics as stats
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 zanahorias = [300, 280, 290, 310, 275, 290, 295, 315, 290, 280, 310, 305]
 
