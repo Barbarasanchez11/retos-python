@@ -14,7 +14,12 @@ import numpy as np
 import statistics as stats
 import matplotlib.pyplot as plt
 
-zanahorias = [300, 280, 290, 310, 275, 290, 295, 315, 290, 280, 310, 305]
+nuevoPeso = input("Ingresa los pesos de las zanahorias  ")
+zanahorias = list(map(int, nuevoPeso.split()))
+
+print(zanahorias[1])
+
+#zanahorias = [300, 280, 290, 310, 275, 290, 295, 315, 290, 280, 310, 305]
 
 media = np.mean(zanahorias)
 mediana = np.median(zanahorias)
@@ -25,5 +30,11 @@ print(f'media, {media}')
 print(f'mediana, {mediana}')
 print(f'moda, {moda}')
 print(f'desviacion, {desviacion:.2f}')
+
+plt.hist(zanahorias)
+plt.title("Distribución de las zanahorias")
+plt.xlabel("Peso (gr)")
+plt.ylabel("Frecuencia")
+plt.show()
 
 
