@@ -27,3 +27,4 @@ df.head()
 #agrupar por mes
 
 df.groupby('mes')['total'].sum()
+
