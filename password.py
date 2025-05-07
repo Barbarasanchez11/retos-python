@@ -3,12 +3,26 @@ import re
 regex = r'^(?![._])(?!.*[._]{2})[a-zA-Z0-9._]+(?<![._])@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$'
 
 
+
 while True:
     email = input('Introduce tu email: ')
 
     if re.match(regex, email):
-     print('El correo es correcto')
-     break
+        print('El correo es correcto')
+        break
     else:
-        print('El correo es inválido')    
+        print('El correo es inválido')   
     
+    
+#for intentos in range(3):
+
+    #email = input('Introduce tu email: ')
+
+    #if re.match(regex, email):
+    # print('El correo es correcto')
+     #break
+    #else:
+    ## print('El correo es inválido') 
+
+#else:
+    #print('Superaste los intentos')         
